@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Email Signup</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup</title>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; padding: 50px; }
-        form { border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
-        input { margin-bottom: 10px; display: block; width: 200px; padding: 8px; }
-        button { background: #0067ff; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
+        h2 { color: #1a1a1a; margin-bottom: 0.5rem; }
+        p { color: #666; margin-bottom: 1.5rem; font-size: 0.9rem; }
+        input[type="text"] { width: 100%; padding: 12px; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 1rem; }
+        button { background: linear-gradient(0deg, #0279FF 0%, #00A3F3 100%); color: white; border: none; padding: 12px; width: 100%; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: opacity 0.2s; }
+        button:hover { opacity: 0.9; }
     </style>
 </head>
 <body>
 
-    <form action='https://crm.zoho.com/crm/WebToLeadForm' method='POST' charset='UTF-8'>
+<div class="card">
+    <h2>Join the list</h2>
+    <p>Enter your email to get our latest updates.</p>
 
-        <input type='hidden' name='xnpe_fi' value='REPLACE_WITH_YOUR_ID'>
-        <input type='hidden' name='xmkt_fi' value='REPLACE_WITH_YOUR_ID'>
-        <input type='hidden' name='zc_gad' value=''>
-
-        <h3>Join our Newsletter</h3>
+    <form action='https://crm.zohocloud.ca/crm/WebToLeadForm' name='WebToLeads57325000000198970' method='POST' accept-charset='UTF-8'>
         
-        <label>Email</label>
-        <input type='text' name='Email' placeholder="Enter your email" required>
+        <input type='text' style='display:none;' name='xnQsjsdp' value='f5e656b640e60ec1ac5e8352e5c7fbb0bb73e83ddc4cf1d49ae9ae89b9fdb2b7'>
+        <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+        <input type='text' style='display:none;' name='xmIwtLD' value='e85f18c55af5ebbfcdd0271d5df163ffdabb5cf8182495ae6e1965d13be64194e4b8212fecf8efd1fae9d461fbba6942'>
+        <input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
+        <input type='text' style='display:none;' name='returnURL' value='https://www.google.com'>
 
-        <input type='hidden' name='Last Name' value='Web Subscriber'>
+        <input type='text' name='Email' placeholder="email@example.com" required>
+
+        <input type="hidden" name="Company" value="GitHub Lead">
+        <input type="hidden" name="Last Name" value="Subscriber">
 
         <button type='submit'>Subscribe Now</button>
     </form>
+</div>
 
 </body>
 </html>
