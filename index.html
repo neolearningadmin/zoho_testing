@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Signup</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding: 50px; }
+        form { border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        input { margin-bottom: 10px; display: block; width: 200px; padding: 8px; }
+        button { background: #0067ff; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <form action='https://crm.zoho.com/crm/WebToLeadForm' method='POST' charset='UTF-8'>
+
+        <input type='hidden' name='xnpe_fi' value='REPLACE_WITH_YOUR_ID'>
+        <input type='hidden' name='xmkt_fi' value='REPLACE_WITH_YOUR_ID'>
+        <input type='hidden' name='zc_gad' value=''>
+
+        <h3>Join our Newsletter</h3>
+        
+        <label>Email</label>
+        <input type='text' name='Email' placeholder="Enter your email" required>
+
+        <input type='hidden' name='Last Name' value='Web Subscriber'>
+
+        <button type='submit'>Subscribe Now</button>
+    </form>
+
+</body>
+</html>
